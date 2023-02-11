@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Go Back</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: aquamarine;
+        }
+
+        .btn {
+            border: 1px solid black;
+            color: white;
+            background-color: green;
+            padding: 12px;
+            align-content: center;
+            text-align: center;
+            border-radius: 12px;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+        }
+
+        container {
+            display: flex;
+            margin-top: 50px;
+            padding-top: 12px;
+            border: 5px solid;
+            height: 150px;
+            line-height: 150px;
+            position: relative;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="flex min-h-full items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
+        <div class="w-full max-w-md space-y-8"><div>
+                <button type="submit" onclick="goback()"
+                    class="group relative flex w-full justify-center rounded-md border border-transparent bg-indigo-600 py-2 px-4 text-sm font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
+                    <span class="absolute inset-y-0 left-0 flex items-center pl-3">
+                        <!-- Heroicon name: mini/lock-closed -->
+                        
+                    </span>
+                    Go Back
+                </button>
+            </div>
+
+        </div>
+    </div>
+
+
+</body>
+<script>
+    function goback() {
+        window.history.back();
+    }
+</script>
+
+</html>
